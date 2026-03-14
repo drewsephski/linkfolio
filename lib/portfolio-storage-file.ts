@@ -86,6 +86,29 @@ export async function listPortfolioIds(): Promise<string[]> {
 }
 
 /**
+ * Updates an existing portfolio
+ */
+export async function updatePortfolio(portfolioId: string, updates: Partial<PortfolioProfile>): Promise<PortfolioProfile | null> {
+  // Reload storage from file to ensure we have the latest data
+  const latestStorage = loadStorage();
+  const existingPortfolio = latestStorage.get(portfolioId);
+  
+  if (!existingPortfolio) {
+    return null;
+  }
+  
+  // Merge updates with existing portfolio
+  const updatedPortfolio = { ...existingPortfolio, ...updates };
+  
+  // Update in storage
+  portfolioStore.set(portfolioId, updatedPortfolio);
+  saveStorageToFile(portfolioStore);
+  
+  console.log('Portfolio updated successfully:', portfolioId);
+  return updatedPortfolio;
+}
+
+/**
  * Gets portfolio metadata
  */
 export async function getPortfolioMetadata(portfolioId: string): Promise<{

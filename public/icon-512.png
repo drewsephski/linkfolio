@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black minimalist background -->
+  <rect width="512" height="512" rx="96" fill="#000000"/>
+  
+  <!-- Clean LinkedIn "in" symbol -->
+  <rect x="112" y="176" width="24" height="208" rx="4" fill="#ffffff"/>
+  <rect x="208" y="112" width="24" height="272" rx="4" fill="#ffffff"/>
+  <rect x="304" y="208" width="24" height="176" rx="4" fill="#ffffff"/>
+  
+  <!-- Minimal portfolio indicator -->
+  <rect x="352" y="144" width="64" height="8" rx="4" fill="#ffffff" opacity="0.7"/>
+  <rect x="352" y="168" width="48" height="8" rx="4" fill="#ffffff" opacity="0.5"/>
+  <rect x="352" y="192" width="32" height="8" rx="4" fill="#ffffff" opacity="0.3"/>
+  <rect x="352" y="216" width="56" height="8" rx="4" fill="#ffffff" opacity="0.4"/>
+  <rect x="352" y="240" width="40" height="8" rx="4" fill="#ffffff" opacity="0.25"/>
+  <rect x="352" y="264" width="52" height="8" rx="4" fill="#ffffff" opacity="0.35"/>
+</svg>

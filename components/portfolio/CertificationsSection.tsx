@@ -27,6 +27,7 @@ export function CertificationsSection({ certifications }: CertificationsSectionP
           --t2:      #a1a1a1;
           --t3:      #555;
           --green:   #22c55e;
+          --accent:  #059669;
           --font:    'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
           background: var(--bg);
           color: var(--t1);
@@ -83,59 +84,63 @@ export function CertificationsSection({ certifications }: CertificationsSectionP
         /* Card row */
         .cs-card {
           position: relative;
-          padding: 24px 24px 24px 28px;
+          padding: 28px 28px 28px 32px;
           border-bottom: 1px solid var(--b);
           background: var(--bg);
           display: grid;
-          grid-template-columns: 36px 1fr auto;
-          gap: 16px;
+          grid-template-columns: 40px 1fr auto;
+          gap: 20px;
           align-items: start;
-          transition: background 0.15s ease;
+          transition: all 0.2s ease;
         }
         .cs-card:last-child { border-bottom: none; }
         .cs-card::before {
           content: '';
           position: absolute;
           left: 0; top: 0; bottom: 0;
-          width: 2px;
-          background: var(--green);
+          width: 3px;
+          background: var(--accent);
           transform: scaleY(0);
           transform-origin: bottom;
-          transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-          border-radius: 0 1px 1px 0;
+          transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+          border-radius: 0 2px 2px 0;
         }
-        .cs-card:hover { background: rgba(255,255,255,0.02); }
+        .cs-card:hover { 
+          background: rgba(5, 150, 105, 0.05); 
+          transform: translateX(2px);
+        }
         .cs-card:hover::before { transform: scaleY(1); }
 
         /* Verified icon */
         .cs-icon {
-          width: 36px; height: 36px;
+          width: 40px; height: 40px;
           border: 1px solid var(--b);
-          border-radius: 8px;
+          border-radius: 10px;
           background: var(--surface);
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
           margin-top: 1px;
-          transition: border-color 0.15s ease;
+          transition: all 0.2s ease;
           color: var(--t3);
         }
         .cs-card:hover .cs-icon {
-          border-color: rgba(34, 197, 94, 0.3);
-          color: var(--green);
+          border-color: rgba(5, 150, 105, 0.4);
+          color: var(--accent);
+          transform: scale(1.05);
         }
 
         /* Content */
         .cs-body { min-width: 0; }
 
         .cs-name {
-          font-size: 14.5px;
+          font-size: 15px;
           font-weight: 600;
           letter-spacing: -0.03em;
           color: var(--t1);
           line-height: 1.3;
-          margin-bottom: 5px;
+          margin-bottom: 6px;
         }
 
         .cs-meta {
@@ -172,19 +177,19 @@ export function CertificationsSection({ certifications }: CertificationsSectionP
           display: flex;
           align-items: center;
           gap: 0;
-          width: 26px; height: 26px;
+          width: 30px; height: 30px;
           border: 1px solid var(--b);
-          border-radius: 6px;
+          border-radius: 8px;
           color: var(--t3);
           text-decoration: none;
           justify-content: center;
-          transition: border-color 0.15s, color 0.15s,
-                      transform 0.18s cubic-bezier(0.16,1,0.3,1);
+          transition: all 0.2s ease;
         }
         .cs-link:hover {
-          border-color: var(--bh);
-          color: var(--t1);
-          transform: translate(2px,-2px);
+          border-color: var(--accent);
+          color: #fff;
+          background: var(--accent);
+          transform: translate(3px,-3px);
         }
         .cs-no-link {
           width: 26px; height: 26px;

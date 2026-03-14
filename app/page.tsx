@@ -4,8 +4,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { normalizeLinkedInInput } from '@/lib/data-normalization';
+import { useAuth } from '@/contexts/auth-context';
 
 export default function HomePage() {
+  const { user } = useAuth();
   const [linkedinInput, setLinkedinInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -34,16 +36,39 @@ export default function HomePage() {
 
     setIsLoading(true);
     try {
+      // Add timeout to prevent infinite waiting
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 300000); // 5 minutes timeout
+
       const response = await fetch('/api/generate-portfolio', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ linkedinUrl: normalizedUrl }),
+        body: JSON.stringify({ 
+          linkedinUrl: normalizedUrl,
+          userId: user?.id // Pass authenticated user ID
+        }),
+        signal: controller.signal,
       });
+      
+      clearTimeout(timeoutId);
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to generate portfolio');
+      }
+      
       const data = await response.json();
-      if (!response.ok) throw new Error(data.error || 'Failed to generate portfolio');
       window.location.href = `/portfolio/${data.portfolioId}`;
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'An unexpected error occurred');
+      if (err instanceof Error) {
+        if (err.name === 'AbortError') {
+          setError('Request timed out. LinkedIn scraping is taking longer than expected. Please try again.');
+        } else {
+          setError(err.message);
+        }
+      } else {
+        setError('An unexpected error occurred');
+      }
     } finally {
       setIsLoading(false);
     }
@@ -487,11 +512,39 @@ export default function HomePage() {
           <div className="hp-nav-inner">
             <a href="/" className="hp-logo">Linkfolio</a>
             <div className="hp-nav-links">
-              <Link href="/portfolio/example" className="hp-nav-btn">
-                View demo
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M7 17L17 7M7 7h10v10"/>
-                </svg>
+              {user ? (
+                <>
+                  <Link href="/dashboard" className="hp-nav-btn">
+                    Dashboard
+                  </Link>
+                  <Link href="/portfolio/example" className="hp-nav-btn">
+                    View demo
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M7 17L17 7M7 7h10v10"/>
+                    </svg>
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link href="/auth/sign-in" className="hp-nav-link">
+                    Sign In
+                  </Link>
+                  <Link href="/auth/sign-up" className="hp-nav-btn">
+                    Sign Up
+                  </Link>
+                  <Link href="/portfolio/example" className="hp-nav-btn">
+                    View demo
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M7 17L17 7M7 7h10v10"/>
+                    </svg>
+                  </Link>
+                </>
+              )}
+              <Link href="/privacy" className="hp-nav-link">
+                Privacy
+              </Link>
+              <Link href="/terms" className="hp-nav-link">
+                Terms
               </Link>
             </div>
           </div>
@@ -513,7 +566,11 @@ export default function HomePage() {
             </h1>
 
             <p className="hp-sub">
-              Paste your LinkedIn username or profile URL. Get a clean, shareable portfolio in seconds. No signup required.
+              {user ? (
+                <>Welcome back, {user.profile?.name || user.email}! Transform your LinkedIn profile into a stunning portfolio.</>
+              ) : (
+                <>Paste your LinkedIn username or profile URL. Get a clean, shareable portfolio in seconds. No signup required.</>
+              )}
             </p>
 
             {/* Form */}

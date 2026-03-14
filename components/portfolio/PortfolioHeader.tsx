@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";  
+import Image from "next/image";
 
 interface PortfolioHeaderProps {
   name: string;
@@ -11,6 +12,24 @@ interface PortfolioHeaderProps {
   followers?: number;
   connections?: number;
   currentCompany?: string;
+}
+
+/**
+ * Check if an image URL is likely to be an SVG
+ */
+function isSvgImage(url: string): boolean {
+  return url.includes('.svg') || 
+         url.includes('image/svg+xml') ||
+         url.includes('licdn.com/aero-v1');
+}
+
+/**
+ * Check if an image URL is from LinkedIn CDN that might have issues
+ */
+function isProblematicLinkedInImage(url: string): boolean {
+  return url.includes('static.licdn.com/aero-v1') ||
+         url.includes('media.licdn.com/aero-v1') ||
+         url.includes('licdn.com/sc/h/');
 }
 
 export function PortfolioHeader({
@@ -114,7 +133,7 @@ export function PortfolioHeader({
         /* Avatar */
         .ph-avatar {
           flex-shrink: 0;
-          width: 68px; height: 68px;
+          width: 88px; height: 88px;
           border-radius: 50%;
           border: 1px solid var(--border-hi);
           background: var(--surface-2);
@@ -126,7 +145,7 @@ export function PortfolioHeader({
                       transform 0.5s cubic-bezier(0.16,1,0.3,1);
         }
         .ph-avatar.in { opacity: 1; transform: scale(1) translateY(0); }
-        .ph-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .ph-avatar .ph-avatar-img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .ph-avatar-initials {
           font-size: 19px; font-weight: 500;
           color: var(--text-2); letter-spacing: -0.02em;
@@ -220,28 +239,54 @@ export function PortfolioHeader({
 
         .ph-stats {
           display: flex; align-items: center; gap: 0;
+          min-width: 140px;
+          justify-content: space-between;
         }
         .ph-stat {
-          display: flex; align-items: baseline; gap: 5px;
-          padding-left: 16px;
-          border-left: 1px solid var(--border);
+          display: flex; flex-direction: column; align-items: center; gap: 2px;
+          padding: 0 12px;
+          text-align: center;
+          min-width: 60px;
+        }
+        .ph-stat:first-child {
+          border-right: 1px solid var(--border);
         }
         .ph-stat-n {
-          font-size: 12.5px; font-weight: 600;
+          font-size: 13px; font-weight: 600;
           color: var(--text-1); letter-spacing: -0.02em;
+          line-height: 1;
         }
         .ph-stat-l {
-          font-size: 11.5px; color: var(--text-3);
+          font-size: 10px; color: var(--text-3);
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          font-weight: 500;
         }
       `}</style>
 
       <div className="ph">
         <div className="ph-hero">
+          {bannerImage && !isProblematicLinkedInImage(bannerImage) && (
+            <div className="ph-hero-img-container">
+              <Image
+                src={bannerImage}
+                alt={`${name}'s professional background`}
+                className="ph-hero-img"
+                width={1200}
+                height={400}
+                unoptimized={isSvgImage(bannerImage)}
+                onError={() => {
+                  console.error('Banner image failed to load:', bannerImage);
+                }}
+                onLoad={() => {
+                  console.log('Banner image loaded successfully:', bannerImage);
+                }}
+              />
+            </div>
+          )}
+          <div className="ph-hero-img-fade" />
           {bannerImage ? (
-            <>
-              <img src={bannerImage} alt="" aria-hidden className="ph-hero-img" />
-              <div className="ph-hero-img-fade" />
-            </>
+            <></>
           ) : (
             <>
               <div className="ph-dot-grid" />
@@ -251,10 +296,36 @@ export function PortfolioHeader({
 
           <div className="ph-hero-inner">
             <div className={`ph-avatar${mounted ? " in" : ""}`}>
-              {avatar
-                ? <img src={avatar} alt={name} />
-                : <span className="ph-avatar-initials">{initials}</span>
-              }
+              {avatar && !isProblematicLinkedInImage(avatar) ? (
+                <Image
+                  src={avatar} 
+                  alt={name}
+                  className="ph-avatar-img"
+                  width={120}
+                  height={120}
+                  unoptimized={isSvgImage(avatar)}
+                  onError={(_e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+                    console.error('Avatar image failed to load:', avatar);
+                    // Fallback to initials
+                    const target = _e.target;
+                    if (target instanceof HTMLImageElement) {
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        const fallback = document.createElement('span');
+                        fallback.className = 'ph-avatar-initials';
+                        fallback.textContent = initials;
+                        parent.appendChild(fallback);
+                      }
+                    }
+                  }}
+                  onLoad={() => {
+                    console.log('Avatar image loaded successfully:', avatar);
+                  }}
+                />
+              ) : (
+                <span className="ph-avatar-initials">{initials}</span>
+              )}
             </div>
 
             <div className={`ph-info${mounted ? " in" : ""}`}>
@@ -266,6 +337,17 @@ export function PortfolioHeader({
               )}
               <h1 className="ph-name">{name}</h1>
               <p className="ph-headline">{headline}</p>
+              {currentCompany && (
+                <div style={{
+                  fontSize: '13px',
+                  color: '#22c55e',
+                  fontWeight: '500',
+                  marginTop: '8px',
+                  letterSpacing: '-0.01em'
+                }}>
+                  Currently at {currentCompany}
+                </div>
+              )}
             </div>
           </div>
         </div>

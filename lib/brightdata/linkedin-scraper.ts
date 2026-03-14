@@ -93,10 +93,32 @@ export class LinkedInScraper {
    */
   static async scrapeProfiles(urls: string[]): Promise<LinkedInProfile[]> {
     try {
+      console.log('Scraping LinkedIn profiles using Bright Data SDK...');
+      console.log('Request URLs:', urls);
+      
       const profiles = await client.datasets.linkedin.collectProfiles(urls, {
         format: 'json'
       });
-      return profiles as unknown as LinkedInProfile[];
+      
+      const profileArray = profiles as unknown as LinkedInProfile[];
+      console.log(`Successfully retrieved ${profileArray.length} profiles`);
+      
+      // Log detailed information about each profile
+      profileArray.forEach((profile, index) => {
+        console.log(`Profile ${index + 1} - ${profile.name}:`, {
+          hasExperience: Array.isArray(profile.experience),
+          experienceCount: Array.isArray(profile.experience) ? profile.experience.length : 0,
+          experienceIsNull: profile.experience === null,
+          experienceIsUndefined: profile.experience === undefined,
+          hasEducation: Array.isArray(profile.education),
+          educationCount: Array.isArray(profile.education) ? profile.education.length : 0,
+          hasSkills: Array.isArray(profile.skills),
+          skillsCount: Array.isArray(profile.skills) ? profile.skills.length : 0,
+          allKeys: Object.keys(profile)
+        });
+      });
+      
+      return profileArray;
     } catch (error) {
       console.error('Error scraping LinkedIn profiles:', error);
       throw new Error(`Failed to scrape profiles: ${(error as Error).message}`);

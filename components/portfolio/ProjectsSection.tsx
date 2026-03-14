@@ -24,6 +24,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           --t1:       #ededed;
           --t2:       #a1a1a1;
           --t3:       #555;
+          --accent:   #2563eb;
           --font:     'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
           background: var(--bg);
           color: var(--t1);
@@ -81,14 +82,14 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
 
         .prj-card {
           position: relative;
-          padding: 28px 28px 28px 32px;
+          padding: 32px 32px 32px 36px;
           border-bottom: 1px solid var(--b);
           background: var(--bg);
           cursor: pointer;
-          transition: background 0.18s ease;
+          transition: all 0.2s ease;
           display: grid;
           grid-template-columns: 1fr auto;
-          gap: 16px;
+          gap: 20px;
           align-items: start;
           text-decoration: none;
           color: inherit;
@@ -98,14 +99,17 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           content: '';
           position: absolute;
           left: 0; top: 0; bottom: 0;
-          width: 2px;
-          background: var(--t1);
+          width: 3px;
+          background: var(--accent);
           transform: scaleY(0);
           transform-origin: bottom;
-          transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-          border-radius: 0 1px 1px 0;
+          transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+          border-radius: 0 2px 2px 0;
         }
-        .prj-card:hover { background: rgba(255,255,255,0.02); }
+        .prj-card:hover { 
+          background: rgba(37, 99, 235, 0.05); 
+          transform: translateX(2px);
+        }
         .prj-card:hover::before { transform: scaleY(1); }
 
         .prj-card-left { min-width: 0; }
@@ -137,21 +141,21 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
         }
 
         .prj-name {
-          font-size: 15px;
+          font-size: 17px;
           font-weight: 600;
           letter-spacing: -0.03em;
           color: var(--t1);
-          margin-bottom: 8px;
+          margin-bottom: 10px;
           line-height: 1.3;
         }
 
         .prj-desc {
-          font-size: 13.5px;
+          font-size: 14px;
           font-weight: 400;
           color: var(--t2);
-          line-height: 1.65;
+          line-height: 1.6;
           letter-spacing: -0.01em;
-          max-width: 520px;
+          max-width: 580px;
         }
 
         .prj-card-right {
@@ -162,19 +166,19 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           padding-top: 2px;
         }
         .prj-arrow {
-          width: 28px; height: 28px;
+          width: 32px; height: 32px;
           border: 1px solid var(--b);
-          border-radius: 6px;
+          border-radius: 8px;
           display: flex; align-items: center; justify-content: center;
           color: var(--t3);
-          transition: border-color 0.15s ease, color 0.15s ease,
-                      transform 0.15s cubic-bezier(0.16,1,0.3,1);
+          transition: all 0.2s ease;
           flex-shrink: 0;
         }
         .prj-card:hover .prj-arrow {
-          border-color: var(--bh);
-          color: var(--t1);
-          transform: translate(2px, -2px);
+          border-color: var(--accent);
+          color: #fff;
+          background: var(--accent);
+          transform: translate(4px, -4px);
         }
 
         @media (max-width: 600px) {

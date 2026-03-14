@@ -7,10 +7,66 @@ import type { ExperienceItem } from "@/lib/data-normalization";
 
 interface ExperienceTimelineProps {
   experience: ExperienceItem[];
+  experienceUnavailable?: boolean;
 }
 
-export function ExperienceTimeline({ experience }: ExperienceTimelineProps) {
+function CurrentExperienceSection({ job }: { job: ExperienceItem }) {
+  // Split description into bullet points if it contains newlines or bullet chars
+  const desc = job.description?.trim() ?? "";
+  const lines = desc.split(/\n+/).map(l => l.replace(/^[-•·]\s*/, "").trim()).filter(Boolean);
+  const isBulleted = lines.length > 1;
+
+  return (
+    <div className="exp-current">
+      <div className="exp-current-label">Current Role</div>
+      <div className="exp-current-title">{job.title}</div>
+      {job.company && (
+        <div className="exp-current-company">{job.company}</div>
+      )}
+      {job.duration && (
+        <div className="exp-current-duration">{job.duration}</div>
+      )}
+      
+      {desc && (
+        <>
+          {isBulleted ? (
+            <div className="exp-current-desc-bullet">
+              {lines.map((line, i) => (
+                <div key={i} className="exp-current-desc-bullet-item">{line}</div>
+              ))}
+            </div>
+          ) : (
+            <div className="exp-current-desc">{desc}</div>
+          )}
+        </>
+      )}
+    </div>
+  );
+}
+
+export function ExperienceTimeline({ experience, experienceUnavailable }: ExperienceTimelineProps) {
+  // Show helpful message when experience data is unavailable
+  if (experienceUnavailable) {
+    return (
+      <div className="experience-unavailable">
+        <h3>Professional Experience</h3>
+        <p className="text-muted">
+          We weren&apos;t able to retrieve the complete work history for this profile from LinkedIn. 
+          This can happen when LinkedIn&apos;s data access is limited or the profile has privacy restrictions.
+        </p>
+        <p className="text-small">
+          The professional summary above contains information about their experience and expertise.
+        </p>
+      </div>
+    );
+  }
+
   if (!experience || experience.length === 0) return null;
+
+  // Find current experience (first one marked as current, or first item if none marked)
+  const currentExperience = experience.find(exp => exp.current) || experience[0];
+  // Filter out current experience from the timeline to avoid duplication
+  const pastExperience = experience.filter(exp => exp.id !== currentExperience?.id);
 
   return (
     <>
@@ -29,6 +85,9 @@ export function ExperienceTimeline({ experience }: ExperienceTimelineProps) {
           --thread:  rgba(255,255,255,0.1);
           --node:    rgba(255,255,255,0.25);
           --node-a:  #ededed;
+          --accent:  #059669;
+          --accent-surface: rgba(5, 150, 105, 0.1);
+          --accent-border: rgba(5, 150, 105, 0.3);
           --font:    'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
           background: var(--bg);
           color: var(--t1);
@@ -224,6 +283,97 @@ export function ExperienceTimeline({ experience }: ExperienceTimelineProps) {
           .exp-card-hdr { flex-direction: column; gap: 8px; }
           .exp-duration { align-self: flex-start; }
         }
+
+        /* Current experience section */
+        .exp-current {
+          background: var(--accent-surface);
+          border: 1px solid var(--accent-border);
+          border-radius: 12px;
+          padding: 32px;
+          margin-bottom: 48px;
+          position: relative;
+          overflow: hidden;
+        }
+        .exp-current::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: var(--accent);
+        }
+        .exp-current-label {
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: var(--accent);
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .exp-current-label::before {
+          content: '';
+          width: 6px; height: 6px;
+          border-radius: 50%;
+          background: var(--accent);
+          animation: pulse 2s infinite;
+        }
+        .exp-current-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: var(--t1);
+          margin-bottom: 4px;
+          line-height: 1.3;
+        }
+        .exp-current-company {
+          font-size: 14px;
+          color: var(--t2);
+          margin-bottom: 16px;
+        }
+        .exp-current-duration {
+          display: inline-block;
+          font-size: 11px;
+          color: var(--accent);
+          font-weight: 500;
+          padding: 4px 10px;
+          border: 1px solid var(--accent-border);
+          border-radius: 6px;
+          background: rgba(5, 150, 105, 0.05);
+          margin-bottom: 16px;
+        }
+        .exp-current-desc {
+          font-size: 14px;
+          color: var(--t2);
+          line-height: 1.7;
+        }
+        .exp-current-desc-bullet {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        .exp-current-desc-bullet-item {
+          display: flex;
+          align-items: baseline;
+          gap: 10px;
+          font-size: 14px;
+          color: var(--t2);
+          line-height: 1.65;
+        }
+        .exp-current-desc-bullet-item::before {
+          content: '—';
+          color: var(--accent);
+          flex-shrink: 0;
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        @keyframes pulse {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.5; }
+        }
       `}</style>
 
       <section className="exp">
@@ -233,11 +383,19 @@ export function ExperienceTimeline({ experience }: ExperienceTimelineProps) {
             <div className="exp-count">{experience.length} roles</div>
           </div>
 
-          <div className="exp-timeline">
-            {experience.map((job, index) => (
-              <ExperienceEntry key={job.id} job={job} index={index} />
-            ))}
-          </div>
+          {/* Current Experience - Prominent Display */}
+          {currentExperience && (
+            <CurrentExperienceSection job={currentExperience} />
+          )}
+
+          {/* Past Experience Timeline */}
+          {pastExperience.length > 0 && (
+            <div className="exp-timeline">
+              {pastExperience.map((job, index) => (
+                <ExperienceEntry key={job.id} job={job} index={index} />
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </>
@@ -275,7 +433,9 @@ function ExperienceEntry({ job, index }: { job: ExperienceItem; index: number })
         <div className="exp-card-hdr">
           <div className="exp-title-block">
             <div className="exp-title">{job.title}</div>
-            <div className="exp-company">{job.company}</div>
+            {job.company && (
+              <div className="exp-company">{job.company}</div>
+            )}
           </div>
           {job.duration && (
             <div className="exp-duration">{job.duration}</div>

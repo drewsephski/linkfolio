@@ -1,0 +1,18 @@
+# Linkfolio Robots.txt
+# https://www.linkfolio.app/robots.txt
+
+User-agent: *
+Allow: /
+
+# Priority pages
+Allow: /api/generate-portfolio
+Allow: /portfolio/*
+Allow: /linkedin-scraper
+
+# Disallow admin/debug routes
+Disallow: /api/debug/
+Disallow: /_next/
+Disallow: /favicon.ico
+
+# Sitemap
+Sitemap: https://linkfolio.vercel.app/sitemap.xml

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+    <style>
+        body { background: #000; color: #fff; padding: 20px; font-family: Arial; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #333; }
+        img { border: 2px solid #fff; margin: 10px; }
+        .error { color: #ff6b6b; }
+        .success { color: #51cf66; }
+    </style>
+</head>
+<body>
+    <h1>LinkedIn Image URL Test</h1>
+    
+    <div class="test-section">
+        <h2>Test Avatar Image</h2>
+        <img 
+            src="https://media.licdn.com/dms/image/v2/D5603AQF-RYZP55jmXA/profile-displayphoto-shrink_200_200/B56ZRi8g.aGsAY-/0/1736826818802?e=2147483647&v=beta&t=bKWfN6UwwtiCqFWsG7rBELbd48qJOAMLdxhBzzkJV0k" 
+            alt="Test Avatar"
+            onload="this.nextElementSibling.innerHTML='✅ Avatar loaded successfully'; this.nextElementSibling.className='success'"
+            onerror="this.nextElementSibling.innerHTML='❌ Avatar failed to load'; this.nextElementSibling.className='error'"
+        />
+        <div>Loading...</div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test Banner Image</h2>
+        <img 
+            src="https://media.licdn.com/dms/image/v2/D5616AQEjhPbTCeblYg/profile-displaybackgroundimage-shrink_200_800/B56ZcytR5SGsAc-/0/1748902420393?e=2147483647&v=beta&t=a-tBeZkxzWTHWYY6MAjxt0oTEuxlW33EUkK3gm5_te4" 
+            alt="Test Banner"
+            style="max-width: 400px; height: auto;"
+            onload="this.nextElementSibling.innerHTML='✅ Banner loaded successfully'; this.nextElementSibling.className='success'"
+            onerror="this.nextElementSibling.innerHTML='❌ Banner failed to load'; this.nextElementSibling.className='error'"
+        />
+        <div>Loading...</div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test Joe Sepeczi Avatar (Your Example)</h2>
+        <img 
+            src="https://media.licdn.com/dms/image/v2/C4E03AQHp1eElKe_oeQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516316426436?e=1775088000&v=beta&t=MuX25OI9WOHRsBwtvqpeABKFMgcyzcen0d3CXaGDaLE" 
+            alt="Joe Sepeczi Avatar"
+            onload="this.nextElementSibling.innerHTML='✅ Joe Sepeczi avatar loaded successfully'; this.nextElementSibling.className='success'"
+            onerror="this.nextElementSibling.innerHTML='❌ Joe Sepeczi avatar failed to load'; this.nextElementSibling.className='error'"
+        />
+        <div>Loading...</div>
+    </div>
+    
+    <script>
+        console.log('Testing LinkedIn image URLs...');
+    </script>
+</body>
+</html>
