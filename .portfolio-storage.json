@@ -1,0 +1,677 @@
+{
+  "mmpznkrkl2vw3": {
+    "id": "4et2r3b01",
+    "name": "Drew Sepeczi",
+    "headline": "",
+    "location": "",
+    "summary": "A passionate professional dedicated to excellence and innovation in their field.",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [],
+    "linkedinUrl": "https://za.linkedin.com/in/Drewsepeczi",
+    "generatedAt": "2026-03-14T07:12:42.463Z"
+  },
+  "mmpzrshx0gc4j": {
+    "id": "gyb5pfi8n",
+    "name": "Drew Sepeczi",
+    "headline": "Phoenix Agency | Greater Chicago Area",
+    "location": "Greater Chicago Area",
+    "summary": "",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "AI",
+      "Web Development",
+      "Full-stack"
+    ],
+    "linkedinUrl": "https://se.linkedin.com/in/drewsepeczi",
+    "generatedAt": "2026-03-14T07:15:57.139Z"
+  },
+  "mmpztbsbzpkk7": {
+    "id": "p5cyjpv6x",
+    "name": "Drew Sepeczi",
+    "headline": "Phoenix Agency | Greater Chicago Area",
+    "location": "Greater Chicago Area",
+    "summary": "I am a full-stack software developer and AI engineer passionate about building and scaling innovative web applications. I specialize in leveraging artificial intelligence to create impactful solutions, from concept to deployment. My experience includes designing, developing, and implementing robust and user-friendly applications, with a focus on delivering high-quality, scalable code. I thrive on tackling complex challenges and am adept at quickly learning and integrating new technologies to drive project success. I’m particularly interested in opportunities where I can combine my software engineering expertise with the power of AI to create truly transformative experiences.",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "AI",
+      "Web Development",
+      "Full-stack"
+    ],
+    "linkedinUrl": "https://lb.linkedin.com/in/drewsepeczi",
+    "generatedAt": "2026-03-14T07:17:08.011Z"
+  },
+  "mmpzxb2nk4tym": {
+    "id": "v4okg4bma",
+    "name": "Drew Sepeczi",
+    "headline": "Phoenix Agency | Greater Chicago Area",
+    "location": "Greater Chicago Area",
+    "summary": "I'm a software developer and AI engineer passionate about building and scaling full-stack web applications. With expertise in both traditional software development and cutting-edge AI technologies, I create robust, scalable solutions that drive real business impact. My work combines technical excellence with innovative problem-solving, whether I'm architecting complex systems or implementing AI-powered features that enhance user experiences. I thrive on turning ideas into functional, high-performance applications that solve real-world challenges. My approach blends clean code practices, system design principles, and a deep understanding of how technology can transform businesses. I'm particularly drawn to projects that push the boundaries of what's possible at the intersection of software engineering and artificial intelligence.",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "AI",
+      "Web Development",
+      "Full-stack"
+    ],
+    "projects": [
+      {
+        "id": "rn783agsj",
+        "title": "Easy UI",
+        "description": "Modern UI components and template marketplace built with Next.js, TypeScript, and Tailwind CSS for rapid web development.",
+        "startDate": "Jun 2025"
+      },
+      {
+        "id": "m3autgye8",
+        "title": "Linkify AI",
+        "description": "An AI-powered blog generator that allows you to easily create high-quality blog posts using pre-filled templates, edit content, and export in Markdown format.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "dyl3hnaoh",
+        "title": "SWE Portfolio",
+        "description": "The portfolio highlights my skills in full-stack web development, machine-learning, and scalable AI solutions.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "kyv4w31ud",
+        "title": "Personal Chatbot",
+        "description": "A sophisticated, personality-infused chatbot that serves as a digital reflection of my identity"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "p4q7iqjtl",
+        "title": "Responsive Web Design",
+        "issuer": "freeCodeCamp",
+        "issueDate": "Nov",
+        "credentialUrl": "https://freecodecamp.org/certification/DrewSepeczi/responsive-web-design?trk=public_profile_see-credential"
+      },
+      {
+        "id": "mpd4vcjlk",
+        "title": "Developing with Llama 3: Meta's Innovative and Open Large Language Model",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/70ead35eb9212b76175ebfec1a0f4175e6a7f030129045c55ba62ebeb64f597b?trk=public_profile_see-credential"
+      },
+      {
+        "id": "ifz0nsnij",
+        "title": "Installing, Running and Testing LLMs on Your Local Computer",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/8a8dcf465739200b212587d8095317bb2d06da265cdca359ff35313b95e7294e?trk=public_profile_see-credential"
+      },
+      {
+        "id": "nym0t6e6p",
+        "title": "RAG and Fine-Tuning Explained",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/86381d92a221ba37bddbbe5cc7b57f6c6cf23337c58c9d9ceb214777351acc45?trk=public_profile_see-credential"
+      },
+      {
+        "id": "y66vdil85",
+        "title": "Google Analytics Individual Qualification",
+        "issuer": "Google",
+        "issueDate": "Jun"
+      },
+      {
+        "id": "5p32o1w44",
+        "title": "Project Management Foundations: Requirements",
+        "issuer": "LinkedIn",
+        "issueDate": "May",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/00a71842398378be1e715f27aa02e555bb2db6454033f1287c632ba10d78ea3c?trk=public_profile_see-credential"
+      },
+      {
+        "id": "888a6m2x1",
+        "title": "MTA: Introduction to Programming Using Python",
+        "issuer": "Python Learning Organization",
+        "issueDate": "Aug"
+      }
+    ],
+    "linkedinUrl": "https://lb.linkedin.com/in/Drewsepeczi",
+    "generatedAt": "2026-03-14T07:20:01.324Z",
+    "bannerImage": "https://media.licdn.com/dms/image/v2/D5616AQGcoEArvKXLwA/profile-displaybackgroundimage-shrink_200_800/B56ZxdYL3sGsAU-/0/1771093148693?e=2147483647&v=beta&t=4agdrwErjrUiIviTCcuZb_bT0huJkVcqcgiO7Ue27Zw",
+    "followers": 462,
+    "connections": 459,
+    "currentCompany": "Phoenix Agency"
+  },
+  "mmq0v9rnpr9hm": {
+    "id": "8gjvwwd45",
+    "name": "Drew Sepeczi",
+    "headline": "Phoenix Agency | Greater Chicago Area",
+    "location": "Greater Chicago Area",
+    "summary": "",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "AI",
+      "Web Development",
+      "Full-stack"
+    ],
+    "projects": [
+      {
+        "id": "yn5uj7gqm",
+        "title": "Easy UI",
+        "description": "Modern UI components and template marketplace built with Next.js, TypeScript, and Tailwind CSS for rapid web development.",
+        "startDate": "Jun 2025"
+      },
+      {
+        "id": "6uckhp0i8",
+        "title": "Linkify AI",
+        "description": "An AI-powered blog generator that allows you to easily create high-quality blog posts using pre-filled templates, edit content, and export in Markdown format.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "gj3kevuj7",
+        "title": "SWE Portfolio",
+        "description": "The portfolio highlights my skills in full-stack web development, machine-learning, and scalable AI solutions.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "huxjmzftv",
+        "title": "Personal Chatbot",
+        "description": "A sophisticated, personality-infused chatbot that serves as a digital reflection of my identity"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "i42cunx7h",
+        "title": "Responsive Web Design",
+        "issuer": "freeCodeCamp",
+        "issueDate": "Nov",
+        "credentialUrl": "https://freecodecamp.org/certification/DrewSepeczi/responsive-web-design?trk=public_profile_see-credential"
+      },
+      {
+        "id": "d0dws3yd2",
+        "title": "Developing with Llama 3: Meta's Innovative and Open Large Language Model",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/70ead35eb9212b76175ebfec1a0f4175e6a7f030129045c55ba62ebeb64f597b?trk=public_profile_see-credential"
+      },
+      {
+        "id": "jf8grc3bj",
+        "title": "Installing, Running and Testing LLMs on Your Local Computer",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/8a8dcf465739200b212587d8095317bb2d06da265cdca359ff35313b95e7294e?trk=public_profile_see-credential"
+      },
+      {
+        "id": "05fj3vhs5",
+        "title": "RAG and Fine-Tuning Explained",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/86381d92a221ba37bddbbe5cc7b57f6c6cf23337c58c9d9ceb214777351acc45?trk=public_profile_see-credential"
+      },
+      {
+        "id": "zpexmbu09",
+        "title": "Google Analytics Individual Qualification",
+        "issuer": "Google",
+        "issueDate": "Jun"
+      },
+      {
+        "id": "dlg6rixc7",
+        "title": "Project Management Foundations: Requirements",
+        "issuer": "LinkedIn",
+        "issueDate": "May",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/00a71842398378be1e715f27aa02e555bb2db6454033f1287c632ba10d78ea3c?trk=public_profile_see-credential"
+      },
+      {
+        "id": "tcugvs89h",
+        "title": "MTA: Introduction to Programming Using Python",
+        "issuer": "Python Learning Organization",
+        "issueDate": "Aug"
+      }
+    ],
+    "linkedinUrl": "https://cl.linkedin.com/in/Drewsepeczi",
+    "generatedAt": "2026-03-14T07:46:31.696Z",
+    "bannerImage": "https://media.licdn.com/dms/image/v2/D5616AQGcoEArvKXLwA/profile-displaybackgroundimage-shrink_200_800/B56ZxdYL3sGsAU-/0/1771093148693?e=2147483647&v=beta&t=4agdrwErjrUiIviTCcuZb_bT0huJkVcqcgiO7Ue27Zw",
+    "followers": 462,
+    "connections": 459,
+    "currentCompany": "Phoenix Agency"
+  },
+  "mmq0wsj3o2zkv": {
+    "id": "748y8djq0",
+    "name": "Drew Sepeczi",
+    "headline": "Phoenix Agency | Greater Chicago Area",
+    "location": "Greater Chicago Area",
+    "summary": "I am a full-stack software developer and AI engineer passionate about crafting and scaling innovative web applications. I specialize in leveraging artificial intelligence to build intelligent solutions that solve complex problems. My expertise spans the entire development lifecycle, from conceptualization and design to deployment and optimization. \n\nI thrive on building robust, user-friendly platforms and am adept at integrating AI models to enhance functionality and deliver exceptional user experiences. I'm particularly skilled in [mention 2-3 key technologies/skills - e.g., Python, TensorFlow, React]. I’m driven by a desire to create impactful technology that drives results and am always exploring the latest advancements in AI and web development. I bring a unique blend of technical proficiency and creative problem-solving to every project.",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "AI",
+      "Web Development",
+      "Full-stack"
+    ],
+    "projects": [
+      {
+        "id": "jvnmi2miv",
+        "title": "Easy UI",
+        "description": "Modern UI components and template marketplace built with Next.js, TypeScript, and Tailwind CSS for rapid web development.",
+        "startDate": "Jun 2025"
+      },
+      {
+        "id": "0nykyxmst",
+        "title": "Linkify AI",
+        "description": "An AI-powered blog generator that allows you to easily create high-quality blog posts using pre-filled templates, edit content, and export in Markdown format.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "xi4uit1v2",
+        "title": "SWE Portfolio",
+        "description": "The portfolio highlights my skills in full-stack web development, machine-learning, and scalable AI solutions.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "2ox9o6mdh",
+        "title": "Personal Chatbot",
+        "description": "A sophisticated, personality-infused chatbot that serves as a digital reflection of my identity"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "9l1bw7ypk",
+        "title": "Responsive Web Design",
+        "issuer": "freeCodeCamp",
+        "issueDate": "Nov",
+        "credentialUrl": "https://freecodecamp.org/certification/DrewSepeczi/responsive-web-design?trk=public_profile_see-credential"
+      },
+      {
+        "id": "q14wfa6os",
+        "title": "Developing with Llama 3: Meta's Innovative and Open Large Language Model",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/70ead35eb9212b76175ebfec1a0f4175e6a7f030129045c55ba62ebeb64f597b?trk=public_profile_see-credential"
+      },
+      {
+        "id": "922jkoqsc",
+        "title": "Installing, Running and Testing LLMs on Your Local Computer",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/8a8dcf465739200b212587d8095317bb2d06da265cdca359ff35313b95e7294e?trk=public_profile_see-credential"
+      },
+      {
+        "id": "xwecwc2a6",
+        "title": "RAG and Fine-Tuning Explained",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/86381d92a221ba37bddbbe5cc7b57f6c6cf23337c58c9d9ceb214777351acc45?trk=public_profile_see-credential"
+      },
+      {
+        "id": "ihj3v45ny",
+        "title": "Google Analytics Individual Qualification",
+        "issuer": "Google",
+        "issueDate": "Jun"
+      },
+      {
+        "id": "3xkz1cy16",
+        "title": "Project Management Foundations: Requirements",
+        "issuer": "LinkedIn",
+        "issueDate": "May",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/00a71842398378be1e715f27aa02e555bb2db6454033f1287c632ba10d78ea3c?trk=public_profile_see-credential"
+      },
+      {
+        "id": "bsjo4p03q",
+        "title": "MTA: Introduction to Programming Using Python",
+        "issuer": "Python Learning Organization",
+        "issueDate": "Aug"
+      }
+    ],
+    "linkedinUrl": "https://pt.linkedin.com/in/Drewsepeczi",
+    "generatedAt": "2026-03-14T07:47:49.478Z",
+    "bannerImage": "https://media.licdn.com/dms/image/v2/D5616AQGcoEArvKXLwA/profile-displaybackgroundimage-shrink_200_800/B56ZxdYL3sGsAU-/0/1771093148693?e=2147483647&v=beta&t=4agdrwErjrUiIviTCcuZb_bT0huJkVcqcgiO7Ue27Zw",
+    "followers": 462,
+    "connections": 459,
+    "currentCompany": "Phoenix Agency"
+  },
+  "mmq0xwlk0d2is": {
+    "id": "hnq3x3em8",
+    "name": "Drew Sepeczi",
+    "headline": "Phoenix Agency | Greater Chicago Area",
+    "location": "Greater Chicago Area",
+    "summary": "I am a full-stack software developer and AI engineer passionate about building and scaling impactful web applications. My expertise lies in leveraging artificial intelligence to create innovative solutions that drive results. I thrive on transforming complex challenges into elegant, efficient code. \n\nI have a proven track record of designing, developing, and deploying robust and scalable applications, utilizing technologies like [mention 2-3 key technologies e.g., Python, React, AWS]. I'm particularly adept at integrating AI/ML models to enhance user experiences and automate processes. \n\nDriven by a desire to create intelligent and user-centric technology, I’m always exploring new ways to apply AI to solve real-world problems. I am eager to collaborate on projects that push the boundaries of what’s possible.",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "AI",
+      "Web Development",
+      "Full-stack"
+    ],
+    "projects": [
+      {
+        "id": "g2x94yspm",
+        "title": "Easy UI",
+        "description": "Modern UI components and template marketplace built with Next.js, TypeScript, and Tailwind CSS for rapid web development.",
+        "startDate": "Jun 2025"
+      },
+      {
+        "id": "lv7ksy4wb",
+        "title": "Linkify AI",
+        "description": "An AI-powered blog generator that allows you to easily create high-quality blog posts using pre-filled templates, edit content, and export in Markdown format.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "nxk3m77ig",
+        "title": "SWE Portfolio",
+        "description": "The portfolio highlights my skills in full-stack web development, machine-learning, and scalable AI solutions.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "kgn1oytjn",
+        "title": "Personal Chatbot",
+        "description": "A sophisticated, personality-infused chatbot that serves as a digital reflection of my identity"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "5rh02zvkt",
+        "title": "Responsive Web Design",
+        "issuer": "freeCodeCamp",
+        "issueDate": "Nov",
+        "credentialUrl": "https://freecodecamp.org/certification/DrewSepeczi/responsive-web-design?trk=public_profile_see-credential"
+      },
+      {
+        "id": "d5kymla4n",
+        "title": "Developing with Llama 3: Meta's Innovative and Open Large Language Model",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/70ead35eb9212b76175ebfec1a0f4175e6a7f030129045c55ba62ebeb64f597b?trk=public_profile_see-credential"
+      },
+      {
+        "id": "d35tjief3",
+        "title": "Installing, Running and Testing LLMs on Your Local Computer",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/8a8dcf465739200b212587d8095317bb2d06da265cdca359ff35313b95e7294e?trk=public_profile_see-credential"
+      },
+      {
+        "id": "ymv7z2gwi",
+        "title": "RAG and Fine-Tuning Explained",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/86381d92a221ba37bddbbe5cc7b57f6c6cf23337c58c9d9ceb214777351acc45?trk=public_profile_see-credential"
+      },
+      {
+        "id": "shwwomwdh",
+        "title": "Google Analytics Individual Qualification",
+        "issuer": "Google",
+        "issueDate": "Jun"
+      },
+      {
+        "id": "j6now8np5",
+        "title": "Project Management Foundations: Requirements",
+        "issuer": "LinkedIn",
+        "issueDate": "May",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/00a71842398378be1e715f27aa02e555bb2db6454033f1287c632ba10d78ea3c?trk=public_profile_see-credential"
+      },
+      {
+        "id": "zlf6n22lo",
+        "title": "MTA: Introduction to Programming Using Python",
+        "issuer": "Python Learning Organization",
+        "issueDate": "Aug"
+      }
+    ],
+    "linkedinUrl": "https://pk.linkedin.com/in/Drewsepeczi",
+    "generatedAt": "2026-03-14T07:48:41.182Z",
+    "bannerImage": "https://media.licdn.com/dms/image/v2/D5616AQGcoEArvKXLwA/profile-displaybackgroundimage-shrink_200_800/B56ZxdYL3sGsAU-/0/1771093148693?e=2147483647&v=beta&t=4agdrwErjrUiIviTCcuZb_bT0huJkVcqcgiO7Ue27Zw",
+    "followers": 462,
+    "connections": 459,
+    "currentCompany": "Phoenix Agency"
+  },
+  "mmq0z9usu1we6": {
+    "id": "3r92x63k3",
+    "name": "Drew Sepeczi",
+    "headline": "Phoenix Agency | Greater Chicago Area",
+    "location": "Greater Chicago Area",
+    "summary": "I am a passionate and results-oriented software developer and AI engineer specializing in crafting and deploying scalable, full-stack web applications. I thrive on leveraging cutting-edge AI technologies to build intelligent and impactful solutions. My expertise lies in designing and implementing robust back-end systems, developing intuitive front-end interfaces, and integrating machine learning models to drive innovation. I’m particularly adept at translating complex business challenges into elegant, data-driven technical strategies.  I’m committed to delivering high-quality code and fostering collaborative environments, consistently exceeding expectations in demanding projects.  Let’s connect to explore how my skills can contribute to your next venture.",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "AI",
+      "Web Development",
+      "Full-stack"
+    ],
+    "projects": [
+      {
+        "id": "dlo7qc96q",
+        "title": "Easy UI",
+        "description": "Modern UI components and template marketplace built with Next.js, TypeScript, and Tailwind CSS for rapid web development.",
+        "startDate": "Jun 2025"
+      },
+      {
+        "id": "iibwl7yp3",
+        "title": "Linkify AI",
+        "description": "An AI-powered blog generator that allows you to easily create high-quality blog posts using pre-filled templates, edit content, and export in Markdown format.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "4jjo7o9ni",
+        "title": "SWE Portfolio",
+        "description": "The portfolio highlights my skills in full-stack web development, machine-learning, and scalable AI solutions.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "eut3paud4",
+        "title": "Personal Chatbot",
+        "description": "A sophisticated, personality-infused chatbot that serves as a digital reflection of my identity"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "l2ufzxnsz",
+        "title": "Responsive Web Design",
+        "issuer": "freeCodeCamp",
+        "issueDate": "Nov",
+        "credentialUrl": "https://freecodecamp.org/certification/DrewSepeczi/responsive-web-design?trk=public_profile_see-credential"
+      },
+      {
+        "id": "u857t055n",
+        "title": "Developing with Llama 3: Meta's Innovative and Open Large Language Model",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/70ead35eb9212b76175ebfec1a0f4175e6a7f030129045c55ba62ebeb64f597b?trk=public_profile_see-credential"
+      },
+      {
+        "id": "ws0g6v03o",
+        "title": "Installing, Running and Testing LLMs on Your Local Computer",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/8a8dcf465739200b212587d8095317bb2d06da265cdca359ff35313b95e7294e?trk=public_profile_see-credential"
+      },
+      {
+        "id": "wssqko79y",
+        "title": "RAG and Fine-Tuning Explained",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/86381d92a221ba37bddbbe5cc7b57f6c6cf23337c58c9d9ceb214777351acc45?trk=public_profile_see-credential"
+      },
+      {
+        "id": "gbsxi01jl",
+        "title": "Google Analytics Individual Qualification",
+        "issuer": "Google",
+        "issueDate": "Jun"
+      },
+      {
+        "id": "hmnc9bibx",
+        "title": "Project Management Foundations: Requirements",
+        "issuer": "LinkedIn",
+        "issueDate": "May",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/00a71842398378be1e715f27aa02e555bb2db6454033f1287c632ba10d78ea3c?trk=public_profile_see-credential"
+      },
+      {
+        "id": "25zzthzy3",
+        "title": "MTA: Introduction to Programming Using Python",
+        "issuer": "Python Learning Organization",
+        "issueDate": "Aug"
+      }
+    ],
+    "linkedinUrl": "https://vn.linkedin.com/in/drewsepeczi",
+    "generatedAt": "2026-03-14T07:49:33.977Z",
+    "bannerImage": "https://media.licdn.com/dms/image/v2/D5616AQGcoEArvKXLwA/profile-displaybackgroundimage-shrink_200_800/B56ZxdYL3sGsAU-/0/1771093148693?e=2147483647&v=beta&t=4agdrwErjrUiIviTCcuZb_bT0huJkVcqcgiO7Ue27Zw",
+    "followers": 462,
+    "connections": 459,
+    "currentCompany": "Phoenix Agency"
+  },
+  "mmq11c13z9ygl": {
+    "id": "4j1v7nzpw",
+    "name": "Drew Sepeczi",
+    "headline": "Phoenix Agency | Greater Chicago Area",
+    "location": "Greater Chicago Area",
+    "summary": "",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQF-VwhXbzmLRw/profile-displayphoto-scale_200_200/B56ZtIseLPLEAc-/0/1766451176731?e=2147483647&v=beta&t=yxaI1zaxN-4i-Af_7FSyWKAgJUVjWOZobzK_GoJL-TI",
+    "experience": [],
+    "education": [],
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "AI",
+      "Web Development",
+      "Full-stack"
+    ],
+    "projects": [
+      {
+        "id": "rhgbrpi8k",
+        "title": "Easy UI",
+        "description": "Modern UI components and template marketplace built with Next.js, TypeScript, and Tailwind CSS for rapid web development.",
+        "startDate": "Jun 2025"
+      },
+      {
+        "id": "vnp0q5e2s",
+        "title": "Linkify AI",
+        "description": "An AI-powered blog generator that allows you to easily create high-quality blog posts using pre-filled templates, edit content, and export in Markdown format.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "n6mdw8ru6",
+        "title": "SWE Portfolio",
+        "description": "The portfolio highlights my skills in full-stack web development, machine-learning, and scalable AI solutions.",
+        "startDate": "Feb 2025"
+      },
+      {
+        "id": "1uqsf2rbk",
+        "title": "Personal Chatbot",
+        "description": "A sophisticated, personality-infused chatbot that serves as a digital reflection of my identity"
+      }
+    ],
+    "certifications": [
+      {
+        "id": "x1ggbcv5v",
+        "title": "Responsive Web Design",
+        "issuer": "freeCodeCamp",
+        "issueDate": "Nov",
+        "credentialUrl": "https://freecodecamp.org/certification/DrewSepeczi/responsive-web-design?trk=public_profile_see-credential"
+      },
+      {
+        "id": "sczbfljf2",
+        "title": "Developing with Llama 3: Meta's Innovative and Open Large Language Model",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/70ead35eb9212b76175ebfec1a0f4175e6a7f030129045c55ba62ebeb64f597b?trk=public_profile_see-credential"
+      },
+      {
+        "id": "rf17juiac",
+        "title": "Installing, Running and Testing LLMs on Your Local Computer",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/8a8dcf465739200b212587d8095317bb2d06da265cdca359ff35313b95e7294e?trk=public_profile_see-credential"
+      },
+      {
+        "id": "bxbxfux9r",
+        "title": "RAG and Fine-Tuning Explained",
+        "issuer": "LinkedIn",
+        "issueDate": "Jul",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/86381d92a221ba37bddbbe5cc7b57f6c6cf23337c58c9d9ceb214777351acc45?trk=public_profile_see-credential"
+      },
+      {
+        "id": "tomoi13d5",
+        "title": "Google Analytics Individual Qualification",
+        "issuer": "Google",
+        "issueDate": "Jun"
+      },
+      {
+        "id": "wzbc7ts6s",
+        "title": "Project Management Foundations: Requirements",
+        "issuer": "LinkedIn",
+        "issueDate": "May",
+        "credentialUrl": "https://www.linkedin.com/learning/certificates/00a71842398378be1e715f27aa02e555bb2db6454033f1287c632ba10d78ea3c?trk=public_profile_see-credential"
+      },
+      {
+        "id": "b3p5cdvyr",
+        "title": "MTA: Introduction to Programming Using Python",
+        "issuer": "Python Learning Organization",
+        "issueDate": "Aug"
+      }
+    ],
+    "linkedinUrl": "https://ch.linkedin.com/in/drewsepeczi",
+    "generatedAt": "2026-03-14T07:51:22.511Z",
+    "bannerImage": "https://media.licdn.com/dms/image/v2/D5616AQGcoEArvKXLwA/profile-displaybackgroundimage-shrink_200_800/B56ZxdYL3sGsAU-/0/1771093148693?e=2147483647&v=beta&t=4agdrwErjrUiIviTCcuZb_bT0huJkVcqcgiO7Ue27Zw",
+    "followers": 462,
+    "connections": 459,
+    "currentCompany": "Phoenix Agency"
+  },
+  "mmq15cthbji36": {
+    "id": "q929mqsj4",
+    "name": "Anonymous",
+    "headline": " | ",
+    "location": "",
+    "summary": "A  |  with a passion for excellence and innovation. Experienced in delivering results and driving success through dedication and expertise.",
+    "avatar": "",
+    "experience": [],
+    "education": [],
+    "skills": [],
+    "projects": [],
+    "certifications": [],
+    "linkedinUrl": "",
+    "generatedAt": "2026-03-14T07:54:31.588Z"
+  },
+  "mmq16iz8nm9yo": {
+    "id": "kmfuca3w4",
+    "name": "Sam Stehno",
+    "headline": "Oxy | Lubbock, Texas, United States",
+    "location": "Lubbock, Texas, United States",
+    "summary": "Driven and adaptable software engineer with a passion for building clean, scalable solutions. I thrive on holistic problem-solving, approaching challenges with a systems-thinking mindset to avoid siloed approaches. I leverage strong analytical and development skills to deliver impactful results. My background in [mention relevant field, e.g., data science, software development] allows me to translate complex requirements into efficient and maintainable code. I’m adept at [list 2-3 key skills, e.g., Python, cloud technologies, database design] and enjoy collaborating to create innovative and effective software. I'm committed to continuous learning and delivering high-quality work.",
+    "avatar": "https://media.licdn.com/dms/image/v2/D5603AQGLCqacrwLcmA/profile-displayphoto-scale_200_200/B56ZlETSh1HAAY-/0/1757787532740?e=2147483647&v=beta&t=v_79OuhyZfWFOEM8Tc7oZOiPeSnD7s2w9mEUwLL87s8",
+    "experience": [],
+    "education": [
+      {
+        "id": "7y5lvj6rm",
+        "school": "Unknown School",
+        "degree": "Unknown Degree",
+        "duration": "",
+        "current": false
+      }
+    ],
+    "skills": [],
+    "projects": [],
+    "certifications": [],
+    "linkedinUrl": "https://be.linkedin.com/in/sam-stehno",
+    "generatedAt": "2026-03-14T07:55:13.314Z",
+    "bannerImage": "https://media.licdn.com/dms/image/v2/D5616AQFE_O48mHPPMQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1730158197864?e=2147483647&v=beta&t=WNGJhUqcCmlF-8hOuIft5oCWu5o3thoIZ9lfh9rWYhg",
+    "followers": 368,
+    "connections": 367,
+    "currentCompany": "Oxy"
+  }
+}
