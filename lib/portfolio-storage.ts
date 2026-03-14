@@ -519,7 +519,7 @@ export async function addExperienceEntry(portfolioId: string, experience: Omit<E
     }
 
     // Generate a new ID for the experience
-    const experienceId = Math.random().toString(36).substr(2, 9);
+    const experienceId = crypto.randomUUID();
 
     // Insert the new experience
     const { data: newExperience, error: experienceError } = await insforge
@@ -617,7 +617,7 @@ export async function addEducationEntry(portfolioId: string, education: Omit<Edu
     }
 
     // Generate a new ID for the education
-    const educationId = Math.random().toString(36).substr(2, 9);
+    const educationId = crypto.randomUUID();
 
     // Insert the new education
     const { data: newEducation, error: educationError } = await insforge

@@ -64,8 +64,17 @@ export async function enrichProfileData(
       );
     }
 
-    const enrichedEducation = await Promise.all(
+    const enrichedEducation = await Promise.allSettled(
       profile.education.map(edu => enrichEducation(edu)),
+    ).then(results => 
+      results.map((result, index) => {
+        if (result.status === 'fulfilled') {
+          return result.value;
+        } else {
+          console.error(`Failed to enrich education ${index + 1} (${profile.education[index].school}):`, result.reason);
+          return profile.education[index]; // Return original on failure
+        }
+      })
     );
 
     return {
