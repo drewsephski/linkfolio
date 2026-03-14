@@ -9,7 +9,7 @@ import { PortfolioProfile } from '@/lib/data-normalization';
  */
 
 // Simple in-memory cache for frequently accessed data
-const cache = new Map<string, { data: any; timestamp: number; ttl: number }>();
+const cache = new Map<string, { data: unknown; timestamp: number; ttl: number }>();
 const DEFAULT_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
 /**
@@ -24,7 +24,7 @@ async function cachedQuery<T>(
   const now = Date.now();
   
   if (cached && (now - cached.timestamp) < cached.ttl) {
-    return cached.data;
+    return cached.data as T;
   }
   
   const data = await queryFn();
@@ -86,7 +86,8 @@ export class PortfolioBulkOperations {
       }
       
       // Prepare related data inserts for all portfolios
-      const relatedDataOps = [];
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const relatedDataOps: any[] = [];
       
       insertedPortfolios.forEach((portfolio, index) => {
         const originalProfile = portfolios[index].profile;
@@ -257,11 +258,11 @@ export class PortfolioAnalytics {
         projectsResult,
         certificationsResult
       ] = await Promise.allSettled([
-        insforge.database.from('portfolio_experience').select('id').eq('portfolio_id', portfolio.id),
-        insforge.database.from('portfolio_education').select('id').eq('portfolio_id', portfolio.id),
-        insforge.database.from('portfolio_skills').select('id').eq('portfolio_id', portfolio.id),
-        insforge.database.from('portfolio_projects').select('id').eq('portfolio_id', portfolio.id),
-        insforge.database.from('portfolio_certifications').select('id').eq('portfolio_id', portfolio.id)
+        insforge.database.from('portfolio_experience').select('id').eq('portfolio_id', portfolioId),
+        insforge.database.from('portfolio_education').select('id').eq('portfolio_id', portfolioId),
+        insforge.database.from('portfolio_skills').select('id').eq('portfolio_id', portfolioId),
+        insforge.database.from('portfolio_projects').select('id').eq('portfolio_id', portfolioId),
+        insforge.database.from('portfolio_certifications').select('id').eq('portfolio_id', portfolioId)
       ]);
       
       return {
@@ -411,7 +412,7 @@ export class DatabaseHealth {
       
       return { status, details };
       
-    } catch (error) {
+    } catch {
       details.responseTime = Date.now() - startTime;
       return {
         status: 'unhealthy',

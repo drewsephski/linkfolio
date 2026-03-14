@@ -10,13 +10,15 @@
     "vercel-build": "next build"
   },
   "dependencies": {
+    "@brightdata/sdk": "^0.2.0",
+    "@insforge/sdk": "^1.0.0",
+    "ai": "^6.0.116",
+    "lucide-react": "^0.454.0",
     "next": "^16.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "ai": "^6.0.116",
-    "zod": "^3.23.8",
     "tailwindcss": "^4.0.0",
-    "lucide-react": "^0.454.0"
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
